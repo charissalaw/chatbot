@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+<div class="row">
+  <div class="col">
+    {% with 'images/'|add:image as image_static %}
+        <img src="{% static image_static %}"/>
+    {% endwith %}
+    <h2>{{title}}</h2>
+  </div>
+
+{% endblock %}

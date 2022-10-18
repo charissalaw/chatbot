@@ -1,0 +1,6 @@
+__pycache__/
+cert.pem
+db.sqlite3
+key.pem
+local.env
+tmp/
