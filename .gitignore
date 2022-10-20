@@ -1,6 +1,11 @@
 __pycache__/
-cert.pem
+*.pem
+*.crt
 db.sqlite3
-key.pem
 local.env
 tmp/
+
+# Elastic Beanstalk Files
+.elasticbeanstalk/*
+!.elasticbeanstalk/*.cfg.yml
+!.elasticbeanstalk/*.global.yml

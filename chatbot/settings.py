@@ -25,12 +25,19 @@ DEBUG = get_bool("DEBUG", False)
 APPEND_SLASH=False
 
 
-ALLOWED_HOSTS = ['*']
+# ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = [
+    'localhost',
+    '127.0.0.1',
+    'chatbot-env-dev.us-east-1.elasticbeanstalk.com',
+
+]
 
 
 # Application definition
 
 INSTALLED_APPS = [
+    'chatbot',
     'store',
     'django.contrib.admin',
     'django.contrib.auth',

@@ -1,11 +1,13 @@
 from django.shortcuts import render
 from django.template.loader import get_template
 from django.template import Context
+from django.http import HttpRequest, HttpResponse
 from ninja import Router
 from .models import Product, ProductCategory
 
 
 router = Router()
+
 
 @router.get('/products')
 def list_products(request):
