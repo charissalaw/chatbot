@@ -29,7 +29,7 @@ APPEND_SLASH=False
 ALLOWED_HOSTS = [
     'localhost',
     '127.0.0.1',
-    'chatbot-env-dev.us-east-1.elasticbeanstalk.com',
+    'chatbot-deploy-dev.us-east-1.elasticbeanstalk.com',
 
 ]
 
